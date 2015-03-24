@@ -1,9 +1,6 @@
-apply plugin: 'android-sdk-manager'
 apply plugin: 'com.android.library'
 
-dependencies {
-    compile 'com.facebook.rebound:rebound:0.3.+'
-}
+
 
 android {
     compileSdkVersion 21
@@ -36,4 +33,3 @@ android {
     }
 }
 
-apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
