@@ -1,10 +1,8 @@
 apply plugin: 'com.android.library'
 
-
-
 android {
     compileSdkVersion 21
-    buildToolsVersion '21.1.0'
+    buildToolsVersion '21.1.2'
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
@@ -13,7 +11,7 @@ android {
 
     defaultConfig {
         minSdkVersion 8
-        targetSdkVersion 21
+        targetSdkVersion 22
     }
 
     sourceSets {
@@ -31,5 +29,9 @@ android {
     lintOptions {
         abortOnError false
     }
+}
+
+dependencies {
+    compile 'com.facebook.rebound:rebound:0.3.7'
 }
 
